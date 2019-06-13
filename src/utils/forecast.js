@@ -16,7 +16,9 @@ const forecast = (lat, long, callback) => {
         body.daily.data[0].summary +
           "It is currently " +
           body.currently.temperature +
-          " degree out. There is a 0% chance of rain."
+          " degree out. There is a 0% chance of rain.High\
+          Temperature today is:"+body.daily.data[0].temperatureHigh+
+          "and low Temperature is:" + body.daily.data[0].temperatureLow
       )
     }
   })
